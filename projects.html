@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | H.Rahim</title>
+  <!-- Apply the saved theme before the page renders to prevent a flash of the default dark theme. -->
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = savedTheme || (systemDark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Hisham Rahim</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="experience.html">Experience</a>
+          <a href="qualifications.html">Qualifications</a>
+          <a class="active" href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap page">
+    <!-- ==================== PAGE INTRO ==================== -->
+    <p class="kicker">03 / Projects</p>
+    <h1>Personal projects</h1>
+    <p class="lead">Engineering projects spanning aerospace, embedded systems, 
+      control, computer vision, and computational engineering, while starting to explore ML 
+      and AI.</p>
+
+    <!-- ==================== R/C PLANE ==================== -->
+    <!-- Duplicate this whole article to add another full project. -->
+    <article class="project-detail" id="rc_aircraft">
+      <div class="project-gallery" aria-label="RC Aircraft Media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide active">
+            <img src="images/rc_aircraft/day.jpg" alt="RC Aircraft Hero Image">
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS: copy a gallery-slide to add more -->
+          <div class="gallery-slide">
+            <img src="images/rc_aircraft/night_transmitter.jpg" alt="image 1">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rc_aircraft/rc_day_outd.jpg" alt="image 2">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rc_aircraft/night.jpg" alt="image 3">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rc_aircraft/wings_os.png" alt="image 4">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rc_aircraft/cfd.png" alt="image 5">
+          </div>
+
+
+
+          <div class="gallery-slide">
+            <video controls preload="metadata">
+              <source src="videos/rc_aircraft/rc_showcase.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">AUG 2026 - SEPT 2026 (AGE 18)</span>
+        <h2>Building a Fixed Wing Electric R/C Aircraft</h2>
+        <p>I designed and built an electric R/C aircraft to gain practical experience 
+          in aerospace engineering, particularly CAD, CFD and aerodynamics. The project 
+          was intended to take me through the complete engineering process from concept 
+          to flight, while understanding the challenges of building an electric aircraft 
+          and the constraints of flight, alongside developing my skills in electronics, 
+          programming, testing and  problem-solving. I entered this into element14's 
+          "Show and Tell" competition, in which I was one of the 25 selected winners.
+        </p>
+
+        <a class="btn" href="https://community.element14.com/challenges-projects/project14/b/news/posts/winners-announcement-show-tell" target="_blank" rel="noopener noreferrer">View Competition Post ↗</a>
+        <h3>Platform and Systems Architecture</h3>
+        <p>This project involved a custom flight controller and radio communication system,
+          based primarily on Arduino Nano and ESP32 platforms.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="chips">
+          <span>CAD - Autodesk Fusion</span>
+          <span>CFD - SimScale</span>
+          <span>Embedded Systems - Arduino, ESP32</span>
+          <span>Aerodynamics and Airframe Design</span>
+          <span>Radio Communication and Telemetry</span>
+          <span>Programming - C++</span>
+        </div>
+
+        <!-- <h3>Results</h3>
+        <p>[Measured performance, test results, lessons learned, or current status.]</p> -->
+
+        <a class="btn" href="https://drive.google.com/file/d/1iGLfuOGH2ld2UPQp_DAwYaOFoCZImQnl/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Documentation ↗</a>
+      </div>
+    </article>
+
+    <!-- ==================== MECHLAB ==================== -->
+    <article class="project-detail" id="mechlab">
+      <div class="project-gallery" aria-label="MechLab media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide active">
+            <img src="images/mechlab/tile1.png" alt="tiles 1-3">
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS -->
+          <div class="gallery-slide">
+            <img src="images/mechlab/tile2.png" alt="tiles 4-6">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/mechlab/tile3.png" alt="tiles 7-9">
+          </div>
+          <div class="gallery-slide">
+            <video controls preload="metadata">
+              <source src="videos/mechlab/MechLab - Iter3 FINAL SOLUTION.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">MAR 2025 - JAN 2026 (AGE 17/18)</span>
+        <h2>MechLab</h2>
+        <p>MechLab was created as a simple computational physics program, aimed as a 
+          teaching and learning tool for students at a secondary school or undergraduate
+          level. It simulates basic dynamic systems encounterd by physics students at 
+          these stages of education, such as projectiles, collisions, harmonic oscillators
+          and more.
+        </p>
+
+        <h3>Platform and Solution Structure</h3>
+        <p>The solution was made using Python and OOP (Object Oriented Programming). Details
+          about the solution structure can be seen in the full documentation. This project was 
+          used to learn and develop my skills in computational modelling, as well as using maintanable
+          programming principles. In hindsight, 
+          using C++ would have been smarter given the project's goals, and the OOP and performance
+          benefits that come with the language. 
+        </p>
+
+        <h3>Skills</h3>
+        <div class="chips">
+          <span>Programming - Python</span>
+          <span>Computational Modelling of Dynamic Systems</span>
+        </div>
+
+        <h3>Results</h3>
+        <p>A-Level Computer Science coursework project - Scored 70/70 marks.</p>
+        <a class="btn" href="https://drive.google.com/file/d/1LrcfEM_ztczckpXewFcKPgp5-o3btfME/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Documentation ↗</a>
+      </div>
+    </article>
+
+        <!-- ==================== SAMSUNG COMP ==================== -->
+    <article class="project-detail" id="samsung_comp">
+      <div class="project-gallery" aria-label="Samsung SFT Media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide active">
+            <img src="images/samsung_comp/prt.JPG" alt="prototype">
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS -->
+          <div class="gallery-slide">
+            <img src="images/samsung_comp/event.JPG" alt="event photo 1">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/samsung_comp/hp.JPG" alt="event photo 2>
+          </div>
+          <div class="gallery-slide">
+            <img src="images/samsung_comp/sft.JPG" alt="event photo 3">
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">NOV 2024 - JAN 2025 (AGE 16)</span>
+        <h2>Smart TRACS - Samsung Solve for Tomorrow 2024/2025 UK Competition</h2>
+        <p>A computer vision based traffic management system I worked on for the competition.
+          I used IR and echolocation along with computer vision to optimise traffic
+          flow on a basic 2-way intersection. My project ranked among the top 50 submissions nationally, for which I was invited to
+          phase 2 of the competition.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="chips">
+          <span>Computer Vision - OpenMV</span>
+          <span>Programming - C++ and Python</span>
+        </div>
+        <strong>Unfortunately, documentation of this project was lost :(</strong>
+      </div>
+    </article>
+
+        <!-- ==================== DT NEA ==================== -->
+    <article class="project-detail" id="dt_nea">
+      <div class="project-gallery" aria-label="NEA Media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide active">
+            <img src="images/dt_nea/drilling.png" alt="drilling">
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS -->
+          <div class="gallery-slide">
+            <img src="images/dt_nea/pcb.png" alt="pcb image">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/dt_nea/ppe.png" alt="ppe image">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/dt_nea/buidling.png" alt="ppe image">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/dt_nea/finished.png" alt="ppe image">
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">SEPT 2023 - MAY 2024 (AGE 15/16)</span>
+        <h2>Building a Solar Powered Closed-Loop Thermostat</h2>
+        <p> This project was completed as a part of my GCSE Design and Technology NEA project.
+          It involves using a simple closed-loop control circuit alongside a simple GENIE PIC 
+          Microcontroller to act as a thermostat. A fan and heating element were used to control
+          the ambient temperature using the current state of the room. This was my first full start to
+          finish project, and my first attempt at more advanced techniques such as pcb etching, laser 
+          cutting and electronics
+        </p>
+
+        <h3>Platform and Solution Structure</h3>
+        <p>The solution was developed on the GENIE series of microcontrollers, using flowchart
+          programming in Circuit Wizard, and 2D Design to design the chasis.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="chips">
+          <span>PCB Design</span>
+          <span>Basic Control Systems</span>
+        </div>
+
+        <h3>Results</h3>
+        <p>GCSE Design and Technology NEA - 94/100 </p>
+
+        <a class="btn" href="https://drive.google.com/file/d/1cnyUUm63Hacs5NMXm3S9Yxgt9rar0I6K/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Full Documentation ↗</a>
+      </div>
+    </article>
+
+            <!-- ==================== FIRST R/C PLANE ==================== -->
+    <article class="project-detail" id="first_plane">
+      <div class="project-gallery" aria-label="aircraft media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide">
+            <video controls preload="metadata">
+              <source src="videos/small_plane/outside.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS -->
+          <div class="gallery-slide">
+            <img src="images/small_plane/dismantled.jpg" alt="dismanteld plane">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/small_plane/mantled.jpg" alt="construction image 1">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/small_plane/mantled2.jpg" alt="construction image 2">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/small_plane/electronics.jpg" alt="electronics">
+          </div>
+          <div class="gallery-slide">
+            <video controls preload="metadata">
+              <source src="videos/small_plane/road_crash.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">OCT 2023 - AUG 2023 (AGE 14/15)</span>
+        <h2>My first attempt at an R/C Aircraft</h2>
+        <p> My interest for aerospace, specifically aircraft, goes back many years. After I had 
+          built a basic foundation in electronics and microcontrollers, at the age of 14, I decided
+          to try and build a basic R/C plane. It only flew briefly, but was a huge success for me,
+          at that age, and came with many learnings I applied to all my future projects.
+        </p>
+
+        <h3>Platform and Solution Structure</h3>
+        <p>This project used the Arduino platform, the Arduino Uno for the transmitter, and 
+          the Arduino Nano for the reciever, with the nRF24l01 being the radio communication
+          platform.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="chips">
+          <span>Programming - C++</span>
+          <span>Basic Radio Control</span>
+        </div>
+
+        <strong>This project had no documentation</strong>
+      </div>
+    </article>
+
+            <!-- ==================== RBLX GAME ==================== -->
+    <article class="project-detail" id="sf_extreme">
+      <div class="project-gallery" aria-label="sf_extreme media">
+        <div class="gallery-slides">
+          <!-- HERO MEDIA: this is shown by default -->
+          <div class="gallery-slide active">
+            <img src="images/rblx_game/main_page.png" alt="main page">
+          </div>
+
+          <!-- ADDITIONAL IMAGES / VIDEOS -->
+          <div class="gallery-slide">
+            <img src="images/rblx_game/visits.png" alt="visits">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rblx_game/slideshow_1.png" alt="slideshow 1">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rblx_game/slideshow_2.png" alt="slideshow 2">
+          </div>
+          <div class="gallery-slide">
+            <img src="images/rblx_game/new_swrds.png" alt="slideshow 3">
+          </div>
+        </div>
+
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous project media">‹</button>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next project media">›</button>
+        <div class="gallery-counter" aria-live="polite">1 / 3</div>
+      </div>
+
+      <div>
+        <span class="tag">NOV 2022 - JUN 2021 (AGE 11/12)</span>
+        <h2>Swordfight Extreme - A Roblox Game Development Project</h2>
+        <p> This is my first big project (that remains in memory to this day). I started and 
+          led this project with a group of friends, with the aim of creating a startup company around
+          the game and its concept. Though, looking back, it was nowhere near polished or refined, 
+          I am still extremely proud of the progress I've made since. The game saw some small success, 
+          a peak of around 5100 visitors.
+        </p>
+
+        <h3>Platform and Solution Structure</h3>
+        <p>The game was developed on Roblox Studio, and programmed in Lua.
+        </p>
+
+        <strong>This project had no documentation</strong>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Hisham Rahim</span>
+      <div>
+        <a href="https://www.linkedin.com/in/hisham-rahim-a13910319/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <!--<a href="[GITHUB_URL]">GitHub</a> ADD THIS WHEN NEEDED-->
+        <a href="mailto:h.rahim251n@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

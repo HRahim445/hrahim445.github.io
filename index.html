@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ==================== SITE SETTINGS ==================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="H.Rahim — aerospace engineering portfolio">
+  <title>H.Rahim | Engineering Portfolio</title>
+  <!-- Apply the saved theme before the page renders to prevent a flash of the default dark theme. -->
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = savedTheme || (systemDark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <!-- EDIT: Change your name here -->
+      <a class="brand" href="index.html">Hisham Rahim</a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <nav>
+          <a class="active" href="index.html">Home</a>
+          <a href="experience.html">Experience</a>
+          <a href="qualifications.html">Qualifications</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <!-- EDIT: Small label above your name -->
+        <p class="kicker">Hisham Rahim</p>
+
+        <!-- EDIT: Your name -->
+        <h1>ENGINEERING PORTFOLIO</h1>
+
+        <!-- EDIT: Main introduction -->
+        <p class="lead">
+          Undergraduate aerospace engineering student with a passion for designing, building and 
+          testing real-world engineering systems.
+
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="projects.html">Explore projects</a>
+          <a class="btn ghost" href="experience.html">View experience</a>
+        </div>
+      </div>
+
+      <!-- Decorative graphic — normally no editing needed -->
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="planet"></div>
+        <span class="dot d1"></span>
+        <span class="dot d2"></span>
+        <span class="dot d3"></span>
+      </div>
+    </section>
+
+    <!-- ==================== QUICK STATS ==================== -->
+    <section class="strip">
+      <div class="wrap stat-grid">
+        <!-- EDIT: Replace each value below -->
+        <div>
+          <strong>MEng (Hons) Aerospace Engineering</strong>
+          <span>Education</span>
+        </div>
+        <div>
+          <strong>2030 / 2031</strong>
+          <span>Expected graduation</span>
+        </div>
+        <div>
+          <strong>3</strong>
+          <span>Selected projects</span>
+        </div>
+        <div>
+          <strong>United Kingdom</strong>
+          <span>Location</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section wrap">
+      <div class="section-head">
+        <p class="kicker">01 / About</p>
+        <h2>What I'm interested in</h2>
+          <div class="two-col">
+
+            <!-- LEFT COLUMN -->
+            <div>
+              <p>
+                I'm particularly interested in the engineering of systems that can move, fly and operate autonomously. My main interests lie across aerospace, control systems, robotics and embedded electronics, with a focus on how different engineering disciplines can be brought together to solve a specific problem.
+              </p>
+
+              <p>
+                I'm especially drawn to problems involving automation, control, optimisation and computer vision, where mechanical design, electronics, software and increasingly machine learning can work together to achieve a specific objective. I enjoy understanding not just how an individual component works, but how an entire system behaves and how it can be improved for its intended purpose.
+              </p>
+
+              <p>
+                I'm now continuing to develop these skills through my studies and personal projects, with the aim of tackling increasingly complex engineering problems.
+              </p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div>
+              <p>
+                A lot of my engineering experience has come from building projects of my own. I've worked across mechanical design, electronics and software, using CAD and CFD alongside C++ and Python to turn ideas into working systems.
+              </p>
+
+              <p>
+                My projects have given me hands-on experience with Arduino, ESP32 and STM32 microcontrollers, as well as sensors, control systems and embedded programming. I've also explored machine learning and computer vision, including through dedicated courses and a competition project involving computer vision. From my first R/C aircraft to more recent projects involving flight systems, computational physics and closed-loop control, I've used each project as an opportunity to learn something new and take on a more challenging problem.
+              </p>
+            </div>
+
+          </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="section dark">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">02 / Selected work</p>
+          <h2>Projects</h2>
+          <p> 
+            Showcased here is a selection of some of my personal projects, the ones I 
+            am most proud of. To see more of what I do, I'd strongly recommend you see 
+            the "Projects" page.
+          </p>
+          </div>
+
+        <div class="cards">
+          <!-- PROJECT 1: Duplicate this whole article to add another card -->
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/rc_aircraft/n_tx2.jpg" alt="Electric R/C aircraft">
+            </div>
+            <div class="card-body">
+              <h3>Building a fixed-wing R/C Aircraft</h3>
+              <p>I designed and built an electric R/C aircraft to gain practical experience in aerospace engineering, particularly CAD, CFD and aerodynamics.</p>
+              <a href="projects.html#rc_aircraft">Read more →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/mechlab/collide.png" alt="MechLab Image">
+            </div>
+            <div class="card-body">
+              <h3>MechLab</h3>
+              <p>A visual teaching tool I developed to assist in teaching mechanics at a secondary school level. I used it to develop my programming and computational modelling skills.</p>
+              <a href="projects.html#mechlab">Read more →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/samsung_comp/prt.JPG" alt="MechLab Image">
+            </div>
+            <div class="card-body">
+              <h3>Smart TRACS</h3>
+              <p>A computer vision based traffic management system I built for the Samsing Solve for Tomorrow 2024/2025 Competition. My project ranked among the top 50 submissions nationally.</p>
+              <a href="projects.html#samsung_comp">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT CTA ==================== -->
+    <section class="section wrap cta">
+      <p class="kicker">03 / Contact</p>
+      <h2>Have a project in mind?</h2>
+      <p>Whether it's an engineering opportunity, collaboration or an interesting problem to solve, I'd love to hear from you.</p>
+      <a class="btn" href="mailto:hr.appdev408@gmail.com" target="_blank" rel="noopener noreferrer">Email ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/hisham-rahim-a13910319/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Hisham Rahim</span>
+      <div>
+        <a href="https://www.linkedin.com/in/hisham-rahim-a13910319/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <!--<a href="[GITHUB_URL]">GitHub</a> ADD THIS WHEN NEEDED-->
+        <a href="mailto:h.rahim251n@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

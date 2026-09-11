@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience | H.Rahim</title>
+  <!-- Apply the saved theme before the page renders to prevent a flash of the default dark theme. -->
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = savedTheme || (systemDark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Hisham Rahim</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav>
+          <a href="index.html">Home</a>
+          <a class="active" href="experience.html">Experience</a>
+          <a href="qualifications.html">Qualifications</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap page">
+    <!-- ==================== PAGE INTRO ==================== -->
+    <p class="kicker">01 / Experience</p>
+    <h1>Experience</h1>
+    <p class="lead">A record of my professional experience, virtual placements, and academic background.</p>
+
+    <!-- ==================== PROFESSIONAL EXPERIENCE ==================== -->
+    <section class="experience-section">
+      <div class="section-head experience-heading">
+        <p class="kicker">Professional</p>
+        <h2>Work Experience</h2>
+      </div>
+
+      <!-- Add real work placements/internships here as they are completed. -->
+      <div class="experience-empty">
+        <span class="experience-empty-label">OPEN TO OPPORTUNITIES</span>
+        <h3>Professional experience coming soon.</h3>
+        <p>
+          I am currently building experience through personal engineering projects,
+          virtual experiences and my studies.
+
+          Once I complete a professional placement, it will be displayed here.
+        </p>
+      </div>
+
+      <!--
+      ==================== WORK EXPERIENCE TEMPLATE ====================
+      Copy this block into the Work Experience section when you have a real
+      internship, placement, job, or engineering work experience to add.
+
+      <article class="experience-item">
+        <div class="experience-date">
+          <span>MONTH YEAR — MONTH YEAR</span>
+          <strong>DURATION</strong>
+        </div>
+
+        <div class="experience-marker" aria-hidden="true"></div>
+
+        <div class="experience-card">
+          <div class="experience-card-content">
+            <span class="experience-type">WORK EXPERIENCE</span>
+            <h3>[JOB / INTERNSHIP TITLE]</h3>
+            <h4>[COMPANY / ORGANISATION]</h4>
+
+            <p>
+              [Briefly describe your role, responsibilities, projects you worked
+              on, and the skills or experience you gained.]
+            </p>
+
+            <a class="btn ghost" href="[OPTIONAL-LINK]" target="_blank" rel="noopener noreferrer">
+              View More ↗
+            </a>
+          </div>
+        </div>
+      </article>
+      -->
+    </section>
+
+    <!-- ==================== VIRTUAL WORK EXPERIENCE ==================== -->
+    <section class="experience-section">
+      <div class="section-head experience-heading">
+        <p class="kicker">Virtual placements</p>
+        <h2>Virtual Work Experience</h2>
+      </div>
+
+      <!-- Add virtual work experience placements here as they are completed. -->
+      <div class="experience-empty">
+        <span class="experience-empty-label">LEARNING &amp; DEVELOPMENT</span>
+        <h3>Virtual experience coming soon.</h3>
+        <p>
+          Virtual work experience placements will be displayed here as I complete
+          them, alongside the skills and industry knowledge gained from each placement.
+        </p>
+      </div>
+
+      <!--
+      ==================== VIRTUAL WORK EXPERIENCE TEMPLATE ====================
+      Copy this block into the Virtual Work Experience section for each
+      additional placement. Replace the date, duration, title, company,
+      description, certificate link and certificate image.
+
+      <article class="experience-item">
+        <div class="experience-date">
+          <span>MONTH YEAR</span>
+          <strong>1 WEEK</strong>
+        </div>
+
+        <div class="experience-marker" aria-hidden="true"></div>
+
+        <div class="experience-card">
+          <div class="experience-card-content">
+            <span class="experience-type">VIRTUAL WORK EXPERIENCE</span>
+            <h3>[ROLE / PLACEMENT TITLE]</h3>
+            <h4>[COMPANY / ORGANISATION]</h4>
+
+            <p>
+              [Describe what you worked on, activities you completed, and what
+              you learned from the placement.]
+            </p>
+
+            <a
+              class="btn ghost"
+              href="[GOOGLE DRIVE CERTIFICATE LINK]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Certificate ↗
+            </a>
+          </div>
+
+          <div class="experience-certificate">
+            <img
+              src="images/experience/[CERTIFICATE IMAGE].png"
+              alt="Certificate for [ROLE / PLACEMENT TITLE]"
+            >
+          </div>
+        </div>
+      </article>
+      -->
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="experience-section education-section">
+      <div class="section-head experience-heading">
+        <p class="kicker">Academic background</p>
+        <h2>Education</h2>
+      </div>
+
+      <div class="education-timeline">
+
+        <article class="education-item">
+          <div class="education-date">SEP 2026 — PRESENT</div>
+          <div class="education-content">
+            <h3>MEng Aerospace Engineering</h3>
+            <h4>University of Bath</h4>
+            <p>
+              Integrated Master's degree in Aerospace Engineering, covering areas
+              including aerodynamics, structures, propulsion, materials, control
+              systems and aircraft design.
+            </p>
+            <strong>EXPECTED GRADUATION 2030 / 2031</strong>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-date">2024 — 2026</div>
+          <div class="education-content">
+            <h3>A Levels</h3>
+            <h4>Wallington County Grammar School</h4>
+            <p>
+              Mathematics — A*<br>
+              Further Mathematics — A*<br>
+              Physics — A*<br>
+              Computer Science — A*<br>
+              EPQ (Extended Project Qualification) — A*
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Hisham Rahim</span>
+      <div>
+        <a href="https://www.linkedin.com/in/hisham-rahim-a13910319/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <!--<a href="[GITHUB_URL]">GitHub</a> ADD THIS WHEN NEEDED-->
+        <a href="mailto:h.rahim251n@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
